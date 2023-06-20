@@ -1,0 +1,431 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("../font/HelveticaNeueMedium") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    background-color: #f3f2f9;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1em 1em 0 1em;
+    overflow-x: hidden;
+}
+section{
+    box-sizing: border-box;
+   
+}
+
+#modal{
+
+    border: none;
+    overflow: hidden;
+    width: 17em;
+    height: 17em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 29px;
+    opacity: 1;
+    margin: auto;
+  /*  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+   
+    opacity: 1; */
+   
+    text-align: center;
+
+}
+#modal.active{
+    display: block;
+}
+#modal .txt{
+    height: 17em;
+    line-height: 17em;
+    display: block;
+
+}
+
+#modal .txt p{
+
+    font-size: 1.1em;
+    font-family: "Helvetica";
+}
+#modal .txt p:nth-child(1){
+color: #FD6ABC;
+padding-bottom: .5em;
+}
+#modal .txt div{ 
+
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+lottie-player#lottie01 {
+   
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    z-index: 9999999999999999999999999999999999;
+    box-sizing: border-box;
+}
+
+lottie-player#lottie01.active {
+    display: block;
+}
+
+lottie-player#lottie02 {
+   
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    z-index: 9999999999999999999999999999999999;
+    box-sizing: border-box;
+}
+
+lottie-player#lottie02.active {
+    display: block;
+}
+
+.container span {
+    font-size: 0.8125em;
+
+}
+
+.logo {
+
+    box-sizing: border-box;
+    display: block;
+}
+
+/* TXT TOP */
+.txt_cont p:nth-child(1) {
+    font-size: 0.8125em;
+  
+    box-sizing: border-box;
+
+}
+.txt_cont p:nth-child(1) {
+    font-size: 0.8125em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+
+}
+
+.txt_cont p:nth-child(3) {
+    font-size: 0.8125em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+
+}
+
+.txt_cont p:nth-child(4) {
+    font-size: 0.8125em;
+    box-sizing: border-box;
+    font-weight: bold;
+
+}
+
+.txt_cont span:nth-child(5) {
+    font-size: 0.8125em;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #22C8EB;
+}
+
+/* FORM input_number */
+#input_number {
+    display: block;
+
+}
+
+#input_number.active {
+    display: none;
+
+}
+
+#input_login {
+    width: 20.5em;
+    height: 3.375em;
+    position: relative;
+    margin: auto;
+}
+
+#input_login i.nunb {
+    position: absolute;
+    top: 14px;
+
+    left: 18px;
+    margin: auto;
+    color: #FD6ABC;
+    font-size: 1.5em;
+    
+}
+
+#input_login i.nunb::after {
+    content: ' + 52 ';
+    font-size: 0.7em;
+    color: #FD6ABC;
+
+}
+
+/* FORM input_pin */
+
+#input_pin {
+    display: none;
+
+}
+
+#input_pin.active {
+    display: block;
+
+}
+
+#input_pin i.pin {
+    position: absolute;
+    top: 15px;
+
+    left: 18px;
+    margin: auto;
+    color: #FD6ABC;
+    font-size: 1.1em;
+
+}
+
+#input_pin i.pin::after {
+    content: ' PIN ';
+    font-size: 0.8em;
+    color: #FD6ABC;
+
+}
+
+fieldset {
+    display: block;
+    height: 7em;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input.tel {
+
+    display: block;
+    text-align: center;
+    width: 20.5em;
+    height: 3.375em;
+    border-radius: 27px;
+    border: 1px solid #FD6ABC;
+    color: #FD6ABC;
+}
+
+input.tel:focus {
+    display: block;
+    background: #f4f2f2 0% 0% no-repeat;
+    outline: 2px solid #FD6ABC;
+    transition: .1s;
+    text-align: center;
+
+}
+
+.tel input::placeholder {
+    text-align: center;
+
+}
+
+button {display: block;
+    text-align: center;
+    width: 20.5em;
+    height: 3.375em;
+    border-radius: 27px;
+    border: 2px solid #f1a1cd;
+    background-color: #FD6ABC; 
+    color: #ffffff;
+    margin-top: .5em;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
+
+
+}
+button::after {
+content: ' ';
+width: 26px;
+height: 17px;
+    background-image: url("../img/seta_di.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 9999999;
+right:79px;
+
+}
+button::before {
+    content: ' ';
+    width: 26px;
+    height: 17px;
+        background-image: url("../img/seta_esq.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 9999999;
+       left: 79px;
+    
+    }
+button:hover {
+    opacity: 0.5;
+    transition: 2s;
+}
+
+.casal  {
+
+    max-width: 22em;
+    max-height: 12.375em;
+    box-sizing: border-box;
+   margin-top: 3em;
+   display: block;
+    margin: auto;
+    
+}
+
+.footer {
+    align-self: flex-end;
+    font-size: 0.8125em;
+   padding: 0 .9em;
+    box-sizing: border-box;
+
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 360px) {
+    input.tel {
+        display: block;
+        text-align: center;
+        width: 18em;
+        height: 3.375em;
+        border-radius: 27px;
+        border: 1px solid #FD6ABC;
+        color: #FD6ABC;
+        margin: auto;
+    }
+    button {
+        display: block;
+        text-align: center;
+        width: 18em;
+        margin: auto;
+        margin-top: 0.2em;
+    }
+    #input_login i.nunb{
+      
+        left: 36px;
+  
+    }
+    #input_login i.pin{
+      
+        left: 36px;
+  
+    }
+}
+
+@media only screen and (max-width: 280px) {
+
+    input.tel {
+        display: block;
+        text-align: center;
+        width: 16em;
+        height: 3.375em;
+        border-radius: 27px;
+        border: 1px solid #FD6ABC;
+        color: #FD6ABC;
+        margin: auto;
+    }
+    button {
+        display: block;
+        text-align: center;
+        width: 16em;
+        margin: auto;
+        margin-top: 0.2em;
+    }
+    #input_login i.nunb{
+      
+        left: 60px;
+  
+    }
+    #input_login i.pin{
+      
+        left: 60px;
+  
+    }
+    .footer {
+        display: block;
+        align-self: flex-end;
+        font-size: 0.8125em;
+        padding: 0 2.3em;
+        box-sizing: border-box;
+    }
+    .txt_cont p:nth-child(4) {
+        font-size: 0.75em;
+        box-sizing: border-box;
+        font-weight: bold;
+       
+    }
+    .container {
+       
+        padding: 0.5em 1em 0 1em;
+    }
+    .txt_cont p:nth-child(1) {
+       
+        padding-bottom: 0.5em;
+      
+    }
+    .txt_cont p:nth-child(3) {
+       
+        padding-bottom: 0.5em;
+      
+    }
+}

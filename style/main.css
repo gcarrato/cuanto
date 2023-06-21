@@ -245,7 +245,7 @@ lottie-player#lottie02.active {
 
 fieldset {
     display: block;
-   
+   height: 7em;
     border: none;
     padding: 0;
     margin: 0;
@@ -370,10 +370,7 @@ button:hover {
         left: 36px;
   
     }
-    fieldset{
-
-        height: 6.5em;
-    }
+   
 }
 
 @media only screen and (max-width: 280px) {
